@@ -13,6 +13,9 @@
                 tiles: []
             }
         },
+        components: {
+            Tile
+        },
         methods: {
             fetchDatas () {
                 var tile = {
@@ -89,9 +92,6 @@
                     }
                 });
             }
-        },
-        components: {
-            Tile
         },
         mounted() {
             this.fetchDatas();

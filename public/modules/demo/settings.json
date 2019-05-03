@@ -1,0 +1,9 @@
+{
+	name: 'a',
+	textColor: 'white',
+	backgroundColor: '#ab47bc',
+	width: 6,
+	height: 5,
+	visible: true,
+	order: 1
+}

@@ -1,0 +1,13 @@
+{
+  "backgroundColor": "#eee",
+  "modules": [
+    {
+      "index": "./modules/demo/index.html",
+      "settings": "./modules/demo/settings.json"
+    },
+    {
+      "index": "./modules/demo/index.html",
+      "settings": "./modules/demo/settings.json"
+    }
+  ]
+}

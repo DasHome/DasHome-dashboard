@@ -16,6 +16,8 @@
     "connect-history-api-fallback": "^1.5.0",
     "express": "^4.15.3",
     "serve-static": "^1.13.2",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
     "vue": "^2.3.3",
     "vue-router": "^2.5.3",
     "vuex": "^3.0.1"
