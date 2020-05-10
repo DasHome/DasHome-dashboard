@@ -1,0 +1,9 @@
+{
+	"name": "localClock",
+	"textColor": "white",
+	"backgroundColor": "black",
+	"width": 3,
+	"jsAssets": [
+		"./modules/localClock/index.js"
+	]
+}

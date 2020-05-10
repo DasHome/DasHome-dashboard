@@ -1,0 +1,9 @@
+{
+	"name": "demo",
+	"textColor": "black",
+	"backgroundColor": "#ffca28",
+	"width": 3,
+	"jsAssets": [
+		"./modules/adhan/index.js"
+	]
+}

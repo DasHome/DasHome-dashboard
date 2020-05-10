@@ -1,0 +1,81 @@
+<style>
+
+.localClock {
+  height: 10vh;
+  color: white;
+  font-size: 11vh;
+  font-family: sans-serif;
+  line-height: 10.4vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.localClock::before, .localClock::after {
+  content: '';
+  width: 7ch;
+  height: 3vh;
+  background: linear-gradient(to top, transparent, black);
+  position: absolute;
+  z-index: 2;
+}
+
+.localClock::after {
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.localClock > div {
+  display: flex;
+}
+
+.tick {
+  line-height: 7vh;
+}
+
+.tick-hidden {
+  opacity: 0;
+}
+
+.move {
+  animation: move linear 1s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-20vh);
+  }
+}
+</style>
+
+<div class="localClock">
+	<div class="hours">
+	  <div class="first">
+		<div class="number">0</div>
+	  </div>
+	  <div class="second">
+		<div class="number">0</div>
+	  </div>
+	</div>
+	<div class="tick">:</div>
+	<div class="minutes">
+	  <div class="first">
+		<div class="number">0</div>
+	  </div>
+	  <div class="second">
+		<div class="number">0</div>
+	  </div>
+	</div>
+	<div class="tick">:</div>
+	<div class="seconds">
+	  <div class="first">
+		<div class="number">0</div>
+	  </div>
+	  <div class="second infinite">
+		<div class="number">0</div>
+	  </div>
+	</div>
+  </div>

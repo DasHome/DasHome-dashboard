@@ -1,20 +1,20 @@
 <template>
     <div class="container-fluid">
-        <Header />
-        <Panel />
-        {{settings}}
+        <Header :text="welcomeText" />
+        <Panel :tiles="tiles" />
     </div>
 </template>
 
 <script>
+    import { loadSettings } from '../services/settings-loader'
     import Header from '../components/Header.vue'
     import Panel from '../components/Panel.vue'
 
     export default {
         data() {
             return {
-                tiles: [],
-                settings: {}
+                welcomeText: '',
+                tiles: []
             }
         },
         components: {
@@ -23,14 +23,11 @@
         },
         methods: {
             fetchDatas () {
-                fetch('/settings.json')
-                .then(response => response.json())
-                .then(data =>
-                {
-                    this.settings = data;
-                    document.body.style = 'background-color:' + data.backgroundColor;
-                    
-                    // load modules here
+                loadSettings()
+                .then(settings => {
+                    this.welcomeText = settings.welcomeText;
+                    this.tiles = settings.modules;
+                    document.body.style = 'background-color:' + settings.backgroundColor;
                 });
             }
         },

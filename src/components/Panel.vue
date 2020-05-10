@@ -8,93 +8,21 @@
     import Tile from '../components/Tile.vue'
 
     export default {
+        props: ['tiles'],
         data() {
             return {
-                tiles: []
             }
         },
         components: {
             Tile
         },
-        methods: {
-            fetchDatas () {
-                var tile = {
-                    content: 'atatata',
-                    settings: {
-                        name: 'a',
-                        textColor: 'white',
-                        backgroundColor: '#ec407a',
-                        width: 2,
-                        height: 1,
-                        visible: true,
-                        order: 1
-                    }
-                };
-                
-                this.tiles.push({
-                    content: 'atatata',
-                    settings: {
-                        name: 'a',
-                        textColor: 'white',
-                        backgroundColor: '#ab47bc',
-                        width: 6,
-                        height: 5,
-                        visible: true,
-                        order: 1
-                    }
-                });
-                
-                this.tiles.push(tile);
-                this.tiles.push(tile);
-                this.tiles.push(tile);
-                this.tiles.push(tile);
-                this.tiles.push(tile);
-                this.tiles.push(tile);
-                
-                this.tiles.push(tile);
-                
-                this.tiles.push({
-                    content: 'atatata',
-                    settings: {
-                        name: 'a',
-                        textColor: 'black',
-                        backgroundColor: '#ffca28',
-                        width: 3,
-                        height: 1,
-                        visible: true,
-                        order: 1
-                    }
-                });
-
-                this.tiles.push({
-                    content: 'atatata',
-                    settings: {
-                        name: 'a',
-                        textColor: 'black',
-                        backgroundColor: '#29b6f6',
-                        width: 3,
-                        height: 1,
-                        visible: true,
-                        order: 1
-                    }
-                });
-
-                this.tiles.push({
-                    content: 'atatata',
-                    settings: {
-                        name: 'a',
-                        textColor: 'white',
-                        backgroundColor: '#2672EC',
-                        width: 2,
-                        height: 1,
-                        visible: false,
-                        order: 1
-                    }
-                });
-            }
-        },
         mounted() {
             this.fetchDatas();
+        },
+        methods: {
+            fetchDatas () {
+                
+            }
         }
     }
 </script>

@@ -1,13 +1,12 @@
 {
+  "welcomeText": "As salam alaykum",
   "backgroundColor": "#eee",
   "modules": [
     {
-      "index": "./modules/demo/index.html",
-      "settings": "./modules/demo/settings.json"
+      "settingsPath": "./modules/adhan/settings.json"
     },
     {
-      "index": "./modules/demo/index.html",
-      "settings": "./modules/demo/settings.json"
+      "name": "localClock"
     }
   ]
 }

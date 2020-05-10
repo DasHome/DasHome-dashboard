@@ -1,0 +1,11 @@
+{
+	"name": "internationalClock",
+	"textColor": "white",
+	"backgroundColor": "#3cd19e",
+	"width": 12,
+	"jsAssets": [
+		"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js",
+		"https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone.min.js",
+		"./modules/internationalClock/index.js"
+	]
+}
